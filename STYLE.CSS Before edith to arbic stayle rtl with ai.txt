@@ -6,8 +6,6 @@ body {
     background: #dddddd;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    direction: rtl;
-    text-align: right;
 }
 
 h1,
@@ -17,13 +15,11 @@ h4,
 h5, 
 h6 {
     color: #030f27;
-    text-align: right;
 }
 
 a {
     color: #666666;
     transition: .3s;
-    text-align: right;
 }
 
 a:hover,
@@ -44,8 +40,6 @@ a:focus {
     max-width: 1366px;
     margin: 0 auto;
     background: #ffffff;
-    direction: rtl;
-    text-align: right;
 }
 
 .back-to-top {
@@ -89,7 +83,7 @@ a:focus {
 
 .top-bar .logo {
     padding: 15px 0;
-    text-align: right;
+    text-align: left;
     overflow: hidden;
 }
 
@@ -109,7 +103,7 @@ a:focus {
 .top-bar .top-bar-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: flex-end;
 }
 
 .top-bar .top-bar-icon {
@@ -126,9 +120,7 @@ a:focus {
 }
 
 .top-bar .top-bar-text {
-    padding-right: 15px;
-    padding-left: 0;
-    text-align: right;
+    padding-left: 15px;
 }
 
 .top-bar .top-bar-text h3 {
@@ -258,15 +250,6 @@ a:focus {
     .nav-bar .btn {
         display: none;
     }
-}
-
-.nav-bar .navbar-nav {
-    margin-right: 0;
-    margin-left: auto;
-}
-
-.nav-bar .navbar-nav .nav-link {
-    text-align: right;
 }
 
 
@@ -508,12 +491,6 @@ a:focus {
     }
 }
 
-.section-header,
-.section-header p,
-.section-header h2 {
-    text-align: right;
-}
-
 
 /*******************************/
 /********* Feature CSS *********/
@@ -586,9 +563,7 @@ a:focus {
 }
 
 .feature .feature-text {
-    padding-right: 30px;
-    padding-left: 0;
-    text-align: right;
+    padding-left: 30px;
 }
 
 .feature .feature-text h3 {
@@ -665,10 +640,6 @@ a:focus {
     }
 }
 
-.about .about-text {
-    text-align: right;
-}
-
 
 /*******************************/
 /********** Fact CSS ***********/
@@ -736,10 +707,6 @@ a:focus {
 
 .fact .fact-left h2 {
     color: #fdbe33;
-}
-
-.fact .fact-text {
-    text-align: right;
 }
 
 
@@ -833,11 +800,6 @@ a:focus {
 
 .service .service-item:hover a.btn {
     color: #ffffff;
-}
-
-.service .service-text h3 {
-    text-align: right;
-    padding: 0 25px 0 15px;
 }
 
 
@@ -1384,11 +1346,6 @@ a:focus {
     color: #999999;
 }
 
-.blog .blog-title h3 {
-    text-align: right;
-    padding: 0 25px 0 15px;
-}
-
 
 /*******************************/
 /******* Single Post CSS *******/
@@ -1647,12 +1604,6 @@ a:focus {
 .single .comment-form .btn:hover {
     color: #fdbe33;
     background: #030f27;
-}
-
-.single .single-bio-text {
-    text-align: right;
-    padding-right: 15px;
-    padding-left: 0;
 }
 
 
@@ -1969,11 +1920,6 @@ a:focus {
     background: #fdbe33;
 }
 
-.portfolio .portfolio-text {
-    text-align: right;
-    padding: 0 25px 0 15px;
-}
-
 
 /*******************************/
 /********* Contact CSS *********/
@@ -2257,15 +2203,6 @@ a:focus {
 }
 
 
-.footer,
-.footer .footer-contact,
-.footer .footer-link,
-.footer .newsletter,
-.footer .footer-menu .f-menu,
-.footer .copyright p {
-    text-align: right;
-}
-
 .footer .copyright {
     padding: 30px 15px;
 }
@@ -2295,15 +2232,4 @@ a:focus {
         margin: 5px 0;
         text-align: center;
     }
-}
-
-/* إضافة دعم RTL للعناصر التي تحتاج عكس اتجاه */
-[dir="rtl"] .ml-auto {
-    margin-left: 0 !important;
-    margin-right: auto !important;
-}
-
-[dir="rtl"] .mr-auto {
-    margin-right: 0 !important;
-    margin-left: auto !important;
 }
