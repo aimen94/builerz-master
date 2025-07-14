@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="utf-8">
+        <title>بابل - طلب استشارة</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="طلب استشارة" name="keywords">
+        <meta content="طلب استشارة" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font (Tajawal) -->
+        <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/slick/slick.css" rel="stylesheet">
+        <link href="lib/slick/slick-theme.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body, h1, h2, h3, h4, h5, h6, p, a, button, input, .btn {
+                font-family: 'Tajawal', sans-serif !important;
+            }
+            .consultation-form {
+                background: #f8f9fa;
+                padding: 50px 0;
+            }
+            .form-container {
+                background: white;
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            }
+            .form-group label {
+                font-weight: 600;
+                color: #333;
+                margin-bottom: 8px;
+            }
+            .form-control {
+                border: 2px solid #e9ecef;
+                border-radius: 8px;
+                padding: 12px 15px;
+                font-size: 16px;
+                transition: all 0.3s ease;
+            }
+            .form-control:focus {
+                border-color: #E81C2E;
+                box-shadow: 0 0 0 0.2rem rgba(232, 28, 46, 0.25);
+            }
+            .btn-submit {
+                background: #E81C2E;
+                border: none;
+                padding: 15px 40px;
+                font-size: 18px;
+                font-weight: 600;
+                border-radius: 8px;
+                transition: all 0.3s ease;
+            }
+            .btn-submit:hover {
+                background: #c41826;
+                transform: translateY(-2px);
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- Top Bar Start -->
+            <div class="top-bar">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-lg-4 col-md-12">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <h1>بابل</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-8 col-md-7 d-none d-lg-block">
+                            <div class="row">
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-calendar"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>ساعات العمل</h3>
+                                            <p>الأحد - الجمعة، 8:00 - 9:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-call"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>اتصل بنا</h3>
+                                            <p>+012 345 6789</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="top-bar-item">
+                                        <div class="top-bar-icon">
+                                            <i class="flaticon-send-mail"></i>
+                                        </div>
+                                        <div class="top-bar-text">
+                                            <h3>راسلنا</h3>
+                                            <p>info@example.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Bar End -->
+
+            <!-- Nav Bar Start -->
+            <div class="nav-bar">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                        <a href="#" class="navbar-brand">القائمة</a>
+                        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                            <div class="navbar-nav mr-auto">
+                                <a href="index.html" class="nav-item nav-link">الرئيسية</a>
+                                <a href="about.html" class="nav-item nav-link">من نحن</a>
+                                <a href="service.html" class="nav-item nav-link">الخدمات</a>
+                                <a href="team.html" class="nav-item nav-link">الفريق</a>
+                                <a href="portfolio.html" class="nav-item nav-link">المشاريع</a>
+                                <div class="nav-item dropdown">
+                                    <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">الصفحات</a>
+                                    <div class="dropdown-menu">
+                                        <a href="blog.html" class="dropdown-item">المدونة</a>
+                                        <a href="single.html" class="dropdown-item">صفحة منفردة</a>
+                                    </div>
+                                </div>
+                                <a href="contact.html" class="nav-item nav-link">اتصل بنا</a>
+                            </div>
+                            <div class="ml-auto">
+                                <a class="btn" href="consultation.html">احصل على استشارة</a>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            
+            <!-- Page Header Start -->
+            <div class="page-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h2>طلب استشارة</h2>
+                        </div>
+                        <div class="col-12">
+                            <a href="index.html">الرئيسية</a>
+                            <a href="consultation.html">طلب استشارة</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+            <!-- Consultation Form Start -->
+            <div class="consultation-form">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="form-container">
+                                <div class="section-header text-center mb-5">
+                                    <h2>احصل على استشارة مجانية</h2>
+                                    <p>املأ النموذج التالي وسنقوم بالتواصل معك في أقرب وقت ممكن</p>
+                                </div>
+                                
+                                <form action="mail/consultation.php" method="POST" id="consultationForm">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="name">الاسم الكامل *</label>
+                                                <input type="text" class="form-control" id="name" name="name" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="phone">رقم الهاتف *</label>
+                                                <input type="tel" class="form-control" id="phone" name="phone" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="email">البريد الإلكتروني *</label>
+                                                <input type="email" class="form-control" id="email" name="email" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <label for="city">المدينة *</label>
+                                                <input type="text" class="form-control" id="city" name="city" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="consultation_type">نوع الاستشارة *</label>
+                                        <select class="form-control" id="consultation_type" name="consultation_type" required>
+                                            <option value="">اختر نوع الاستشارة</option>
+                                            <option value="بناء_مباني">بناء المباني</option>
+                                            <option value="تجديد_منازل">تجديد المنازل</option>
+                                            <option value="تصميم_معماري">التصميم المعماري</option>
+                                            <option value="تصميم_داخلي">التصميم الداخلي</option>
+                                            <option value="خدمات_طلاء">خدمات الطلاء</option>
+                                            <option value="استشارة_عامة">استشارة عامة</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="project_size">حجم المشروع</label>
+                                        <select class="form-control" id="project_size" name="project_size">
+                                            <option value="">اختر حجم المشروع</option>
+                                            <option value="صغير">صغير (أقل من 100 متر مربع)</option>
+                                            <option value="متوسط">متوسط (100-500 متر مربع)</option>
+                                            <option value="كبير">كبير (أكثر من 500 متر مربع)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="budget">الميزانية المتوقعة</label>
+                                        <select class="form-control" id="budget" name="budget">
+                                            <option value="">اختر الميزانية</option>
+                                            <option value="أقل_من_50_ألف">أقل من 50 ألف ريال</option>
+                                            <option value="50_ألف_إلى_100_ألف">50 ألف إلى 100 ألف ريال</option>
+                                            <option value="100_ألف_إلى_200_ألف">100 ألف إلى 200 ألف ريال</option>
+                                            <option value="أكثر_من_200_ألف">أكثر من 200 ألف ريال</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="timeline">الجدول الزمني المطلوب</label>
+                                        <select class="form-control" id="timeline" name="timeline">
+                                            <option value="">اختر الجدول الزمني</option>
+                                            <option value="فوري">فوري (خلال شهر)</option>
+                                            <option value="قريب">قريب (خلال 3 أشهر)</option>
+                                            <option value="متوسط">متوسط (خلال 6 أشهر)</option>
+                                            <option value="طويل">طويل (أكثر من 6 أشهر)</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="description">وصف المشروع والتفاصيل</label>
+                                        <textarea class="form-control" id="description" name="description" rows="5" placeholder="اشرح لنا تفاصيل مشروعك وما تريد تحقيقه..."></textarea>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="preferred_contact">طريقة التواصل المفضلة</label>
+                                        <select class="form-control" id="preferred_contact" name="preferred_contact">
+                                            <option value="">اختر طريقة التواصل</option>
+                                            <option value="هاتف">هاتف</option>
+                                            <option value="واتساب">واتساب</option>
+                                            <option value="بريد_إلكتروني">بريد إلكتروني</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <div class="text-center">
+                                        <button type="submit" class="btn btn-submit">إرسال طلب الاستشارة</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Consultation Form End -->
+
+            <!-- Footer Start -->
+            <div class="footer wow fadeIn" data-wow-delay="0.3s">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-contact">
+                                <h2>معلومات الاتصال</h2>
+                                <p><i class="fa fa-map-marker-alt"></i>123 شارع، نيويورك، الولايات المتحدة</p>
+                                <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope"></i>info@example.com</p>
+                                <div class="footer-social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>مجالات الخدمات</h2>
+                                <a href="service.html">بناء المباني</a>
+                                <a href="service.html">تجديد المنازل</a>
+                                <a href="service.html">التصميم المعماري</a>
+                                <a href="service.html">التصميم الداخلي</a>
+                                <a href="service.html">الطلاء</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="footer-link">
+                                <h2>الصفحات المفيدة</h2>
+                                <a href="about.html">من نحن</a>
+                                <a href="contact.html">اتصل بنا</a>
+                                <a href="team.html">فريقنا</a>
+                                <a href="portfolio.html">المشاريع</a>
+                                <a href="blog.html">آراء العملاء</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="newsletter">
+                                <h2>النشرة الإخبارية</h2>
+                                <p>
+                                    اشترك في نشرتنا الإخبارية للحصول على آخر الأخبار والتحديثات حول مشاريعنا وخدماتنا
+                                </p>
+                                <div class="form">
+                                    <input class="form-control" placeholder="البريد الإلكتروني هنا">
+                                    <button class="btn">إرسال</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container footer-menu">
+                    <div class="f-menu">
+                        <a href="">شروط الاستخدام</a>
+                        <a href="">سياسة الخصوصية</a>
+                        <a href="">ملفات تعريف الارتباط</a>
+                        <a href="">المساعدة</a>
+                        <a href="">الأسئلة الشائعة</a>
+                    </div>
+                </div>
+                <div class="container copyright">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <p>&copy; <a href="#">اسم موقعك</a>, جميع الحقوق محفوظة.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <p>تصميم بواسطة <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Footer End -->
+
+            <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        </div>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/slick/slick.min.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script src="js/consultation.js"></script>
+    </body>
+</html> 
